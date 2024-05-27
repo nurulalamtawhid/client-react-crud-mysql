@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-indigo-300">
@@ -42,7 +44,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">TestBOOK</a>
+       <Link to={"/"}><a className="btn btn-ghost text-xl">TestBOOK</a></Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -50,17 +52,7 @@ const Navbar = () => {
             <a className="text-lg">Add Book</a>
           </li>
           <li>
-            <details>
-              <summary className="text-lg">Book-List</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <Link to={"/books"}><a className="text-lg">Books_list</a></Link>
           </li>
           <li>
             <a className="text-lg">Sell-Books</a>

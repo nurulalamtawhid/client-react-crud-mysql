@@ -3,6 +3,7 @@ import {
     
   } from "react-router-dom";
 import Main from "../Layout/Main";
+import Books from "../Pages/Navigated/Books";
 
 
 
@@ -10,5 +11,11 @@ import Main from "../Layout/Main";
     {
         path:"/",
         element:<Main></Main>,
+        children:[
+          {
+            path:"/books",
+            element:<Books/>,
+          }
+        ]
     }
   ])
