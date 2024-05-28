@@ -4,6 +4,7 @@ import {
   } from "react-router-dom";
 import Main from "../Layout/Main";
 import Books from "../Pages/Navigated/Books";
+import AddBooks from "../Pages/Navigated/AddBooks";
 
 
 
@@ -15,6 +16,10 @@ import Books from "../Pages/Navigated/Books";
           {
             path:"/books",
             element:<Books/>,
+          },
+          {
+            path:"/addbooks",
+            element:<AddBooks/>,
           }
         ]
     }

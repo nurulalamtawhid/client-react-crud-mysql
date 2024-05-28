@@ -24,8 +24,8 @@ const Books = () => {
     return (
         <>
             <p className="text-2xl text-blue-500 text-center"> Here Show all the books</p>
-            <div className="grid grid-cols-3 gap-2 py-4">
-            {books.map(book=>
+            <div className="grid  grid-cols-3 gap-[2px]  py-4">
+            {books?.map(book=>
                 <BookCard book={book} key={book.id}/>
             )}
             </div>

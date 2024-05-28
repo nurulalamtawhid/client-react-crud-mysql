@@ -1,7 +1,7 @@
 const BookCard = ({book}) => {
     const {tittle, desc,cover}=book;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl grid grid-cols-3 gap-2">
+    <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
         <img
           src={cover}
